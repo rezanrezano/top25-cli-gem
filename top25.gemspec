@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'top25/version'
+require 'top/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "top25"
-  spec.version       = Top25::VERSION
-  spec.authors       = ["rezanrezano"]
-  spec.email         = ["captenrez@gmail.com"]
+  spec.version       = top25::VERSION
+  spec.authors       = ["Yardagan AL Hamed"]
+  spec.email         = ["gooryalhamed@hotmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{TODO: search for best 25 hotels,restaurants and beaches.}
+  spec.description   = %q{TODO: This gem is a cli data gem, it allows the user to search for the best 25 hotels,restaurants and beaches in the world.}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
@@ -30,6 +30,6 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.14"
+  spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"
 end
